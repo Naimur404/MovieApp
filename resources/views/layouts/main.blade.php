@@ -7,7 +7,7 @@
     <title>Movie App</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     @livewireStyles
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="font-sans bg-gray-900 text-white">
 <nav class="border-b border-gray-800">
@@ -25,10 +25,10 @@
             <a href="#" class="hover:text-gray-300"> Movies</a>
         </li>
         <li class="md:ml-6 mt-3 md:mt-0">
-            <a href="#" class="hover:text-gray-300">Tv Shows</a>
+            <a href="{{ route('tv') }}" class="hover:text-gray-300">Tv Shows</a>
         </li>
         <li class="md:ml-6 mt-3 md:mt-0">
-            <a href="#" class="hover:text-gray-300">Actors</a>
+            <a href="{{ route('actors') }}" class="hover:text-gray-300">Actors</a>
         </li>
 
     </ul>
@@ -49,11 +49,12 @@
 
 </nav>
 @yield('content')
-   <footer class="border border-t border-gray-800">
+   <footer class="border border-t border-gray-800 mt-8">
         <div class="container mx-auto text-sm px-4 py-6">
             Powered by <a href="https://www.themoviedb.org/documentation/api" class="underline hover:text-gray-300">TMDb API</a>
         </div>
     </footer>
     @livewireScripts
+    @yield('scripts')
 </body>
 </html>

@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       width:{
         '96': '22rem',
+        '76': '20rem',
       }
     },
      spinner: (theme) => ({
@@ -18,7 +19,7 @@ module.exports = {
         border: '2px', // border-width of the spinner (shouldn't be bigger than half the spinner's size)
         speed: '500ms', // the speed at which the spinner should rotate
       },
-  
+
     }),
   },
   plugins: [
