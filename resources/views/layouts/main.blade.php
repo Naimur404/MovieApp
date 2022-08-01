@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movie App</title>
+    <title>@yield('title')</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="shortcut icon" href="{{ asset('img/icon.jpg') }}" />
     @livewireStyles
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -13,7 +14,7 @@
 <nav class="border-b border-gray-800">
 
 
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between px-4 py-6">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4 py-6">
     <ul class="flex flex-col md:flex-row items-center">
         <li>
             <a href="/">
@@ -22,7 +23,7 @@
             </a>
         </li>
         <li class="md:ml-16 mt-3 md:mt-0">
-            <a href="#" class="hover:text-gray-300"> Movies</a>
+            <a href="/" class="hover:text-gray-300"> Movies</a>
         </li>
         <li class="md:ml-6 mt-3 md:mt-0">
             <a href="{{ route('tv') }}" class="hover:text-gray-300">Tv Shows</a>

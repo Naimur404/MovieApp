@@ -1,5 +1,5 @@
 <div class="rounded overflow-hidden shadow-lg mt-8">
-    <a href="{{route('tv.show',$popularShow['id'])}}"><img class="w-full hover:opacity-75 transition ease-out duration-150" src="{{'https://image.tmdb.org/t/p/w500/'.$popularShow['poster_path']}}" alt="poster" ></a>
+    <a href="{{route('tv.show',$popularShow['id'])}}"><img class="w-76 hover:opacity-75 transition ease-out duration-150 " src="{{'https://image.tmdb.org/t/p/w500/'.$popularShow['poster_path']}}" alt="poster" ></a>
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2 ">
 <a href="{{route('movies.show',$popularShow['id'])}}" class="text-sm mt-2 hover:text-gray-300">

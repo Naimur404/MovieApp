@@ -1,12 +1,12 @@
 @extends('layouts.main')
-
+@section('title', 'Tv Shows')
 @section('content')
 <div class="container mx-auto px-4 pt-12">
 	<div class="popular_movies">
 		<h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Popular Shows</h2>
 
 
-	<div class=" grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-16">
+	<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-16">
     <!--Card 1-->
     @foreach ($popularShows as $popularShow )
 
@@ -32,7 +32,7 @@
 		<h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">Top Rated</h2>
 
 
-	<div class=" grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-16">
+	<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-16">
     <!--Card 1-->
     @foreach($topRated as $nmovies)
 

@@ -1,5 +1,5 @@
 @extends('layouts.main')
-
+@section('title', $actor['name'])
 @section('content')
     <div class="movie-info border-b border-gray-800">
         <div class="container mx-auto px-4 py-16 flex flex-col md:flex-row">
@@ -54,7 +54,7 @@
 
                 <h4 class="font-semibold mt-12">Known For</h4>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-5 gap-8">
                     @foreach ($movies as $movie)
                         <div class="mt-4">
                             <a href="{{ $movie['linkToPage'] }}"><img src="{{ $movie['poster_path'] }}" alt="poster" class="hover:opacity-75 transition ease-in-out duration-150"></a>

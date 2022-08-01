@@ -1,5 +1,5 @@
 @extends('layouts.main')
-
+@section('title','Movie App')
 @section('content')
 <div class="container mx-auto px-4 pt-12">
 	<div class="popular_movies">
@@ -42,7 +42,7 @@
 				</a>
 			</div> -->
 
-	<div class=" grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-16">
+	<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16">
     <!--Card 1-->
     @foreach ($popularMovies as $popularMovie )
 
@@ -66,22 +66,22 @@
 
 			<div class="now_playing_movies py-24">
 		<h2 class="uppercase tracking-wider text-orange-500 text-lg font-semibold">now playing</h2>
-	
 
-	<div class=" grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-5 gap-16">
+
+	<div class="grid grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-16">
     <!--Card 1-->
     @foreach($nowPlaying as $nmovies)
 
     <x-movie-card :popularMovie="$nmovies" :genres="$genres"/>
-   
+
 @endforeach
 
 
-   
-   
- 
-    
- 
+
+
+
+
+
 
 
 

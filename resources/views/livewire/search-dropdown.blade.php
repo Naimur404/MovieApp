@@ -20,14 +20,18 @@
             @foreach($searchresult as $result)
             <li class="border-b border-gray-700">
 
-                @if(isset($result['poster_path']))
+
                 @if($result['media_type'] == 'tv')
                 <a href="{{route('tv.show',$result['id'])}}" class="block hover:bg-gray-700 px-3 py-3 flex f items-center">
                 @elseif ($result['media_type'] == 'movie')
                 <a href="{{route('movies.show',$result['id'])}}" class="block hover:bg-gray-700 px-3 py-3 flex f items-center">
 
+
+
                 @else
+                <a href="{{route('actor.show',$result['id'])}}" class="block hover:bg-gray-700 px-3 py-3 flex f items-center">
                 @endif
+                @if(isset($result['poster_path']))
                   <img src="{{'https://image.tmdb.org/t/p/w92/'.$result['poster_path']}}" alt="Poster" class="w-8">
                   @elseif(isset($result['profile_path']))
 
