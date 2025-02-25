@@ -10,8 +10,7 @@
     "laravel/framework": "^9.0",
     "laravel/sanctum": "^2.11",
     "laravel/tinker": "^2.5",
-    "livewire/livewire": "^2.10",
-    "fruitcake/laravel-cors":"^2.1"
+    "livewire/livewire": "^2.10"
     
 },
   "require-dev": {
